@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Agendar livro | Smart Library</title>
+  <link rel="stylesheet" href="agendar.css">
+  <script src="agendar.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html">Smart Library</a>
+    <h1>Agendar um livro</h1>
+    <p>Preencha os dados para solicitar seu empréstimo.</p>
+  </header>
+
+  <main>
+    <form id="formulario-agendamento">
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="livro">Nome do livro</label>
+      <input type="text" id="livro" name="livro" required>
+
+      <label for="retirada">Local de retirada</label>
+      <select id="retirada" name="retirada" required>
+        <option value="">Escolha um local</option>
+        <option value="Balcão">Balcão</option>
+        <option value="Armário inteligente">Armário inteligente</option>
+      </select>
+
+      <label for="data">Data para retirada</label>
+      <input type="date" id="data" name="data" required>
+
+      <button type="submit">Agendar empréstimo</button>
+    </form>
+
+    <p class="mensagem" role="status" aria-live="polite"></p>
+    <a class="voltar" href="catalogo.html">Voltar ao catálogo</a>
+    <br>
+    <a class="voltar1" href="agendamentos.html">Ver agendamentos feitos</a>
+  </main>
+</body>
+</html>
