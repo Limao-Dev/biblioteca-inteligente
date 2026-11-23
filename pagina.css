@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: #FFFFE0;
+  color: #3B2B20;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background-color: #800000;
+  color: #FFFFFF;
+}
+
+.marca {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #000000;
+}
+
+.opcoes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.cartao {
+  width: 220px;
+  padding: 18px;
+  border: 1px solid #800000;
+  background-color: #F3EBDD;
+}
+
+.cartao a,
+.voltar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #800000;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 1p solid #000000;
+  border-radius: 20px;
+}
+
+(max-width: 600px) {
+  main {
+    margin: 10px auto;
+  }
+
+  .cartao {
+    width: 100%;
+  }
+}
